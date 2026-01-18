@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Oak Furniture Store NZ - Market Analysis | 市场分析报告</title>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
     <style>
         :root {
             --primary: #8B5A2B;
@@ -53,14 +56,21 @@
             width: 200%;
             height: 200%;
             background: radial-gradient(circle at 20% 80%, rgba(139, 90, 43, 0.15) 0%, transparent 50%),
-                        radial-gradient(circle at 80% 20%, rgba(212, 165, 116, 0.1) 0%, transparent 50%),
-                        radial-gradient(circle at 40% 40%, rgba(193, 154, 107, 0.08) 0%, transparent 30%);
+                radial-gradient(circle at 80% 20%, rgba(212, 165, 116, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 40% 40%, rgba(193, 154, 107, 0.08) 0%, transparent 30%);
             animation: float 20s ease-in-out infinite;
         }
 
         @keyframes float {
-            0%, 100% { transform: translate(-10%, -10%) rotate(0deg); }
-            50% { transform: translate(0%, 0%) rotate(180deg); }
+
+            0%,
+            100% {
+                transform: translate(-10%, -10%) rotate(0deg);
+            }
+
+            50% {
+                transform: translate(0%, 0%) rotate(180deg);
+            }
         }
 
         /* Header */
@@ -170,8 +180,17 @@
         }
 
         @keyframes pulse {
-            0%, 100% { opacity: 1; transform: scale(1); }
-            50% { opacity: 0.5; transform: scale(1.2); }
+
+            0%,
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+
+            50% {
+                opacity: 0.5;
+                transform: scale(1.2);
+            }
         }
 
         .hero h1 {
@@ -317,7 +336,8 @@
             border-collapse: collapse;
         }
 
-        th, td {
+        th,
+        td {
             padding: 1rem;
             text-align: left;
             border-bottom: 1px solid var(--glass-border);
@@ -367,10 +387,25 @@
             border: 1px solid var(--glass-border);
         }
 
-        .swot-card.strength { background: linear-gradient(135deg, rgba(34, 197, 94, 0.2), rgba(34, 197, 94, 0.05)); border-color: rgba(34, 197, 94, 0.3); }
-        .swot-card.weakness { background: linear-gradient(135deg, rgba(239, 68, 68, 0.2), rgba(239, 68, 68, 0.05)); border-color: rgba(239, 68, 68, 0.3); }
-        .swot-card.opportunity { background: linear-gradient(135deg, rgba(59, 130, 246, 0.2), rgba(59, 130, 246, 0.05)); border-color: rgba(59, 130, 246, 0.3); }
-        .swot-card.threat { background: linear-gradient(135deg, rgba(245, 158, 11, 0.2), rgba(245, 158, 11, 0.05)); border-color: rgba(245, 158, 11, 0.3); }
+        .swot-card.strength {
+            background: linear-gradient(135deg, rgba(34, 197, 94, 0.2), rgba(34, 197, 94, 0.05));
+            border-color: rgba(34, 197, 94, 0.3);
+        }
+
+        .swot-card.weakness {
+            background: linear-gradient(135deg, rgba(239, 68, 68, 0.2), rgba(239, 68, 68, 0.05));
+            border-color: rgba(239, 68, 68, 0.3);
+        }
+
+        .swot-card.opportunity {
+            background: linear-gradient(135deg, rgba(59, 130, 246, 0.2), rgba(59, 130, 246, 0.05));
+            border-color: rgba(59, 130, 246, 0.3);
+        }
+
+        .swot-card.threat {
+            background: linear-gradient(135deg, rgba(245, 158, 11, 0.2), rgba(245, 158, 11, 0.05));
+            border-color: rgba(245, 158, 11, 0.3);
+        }
 
         .swot-title {
             font-weight: 600;
@@ -381,10 +416,21 @@
             gap: 8px;
         }
 
-        .swot-title.strength { color: #4ade80; }
-        .swot-title.weakness { color: #f87171; }
-        .swot-title.opportunity { color: #60a5fa; }
-        .swot-title.threat { color: #fbbf24; }
+        .swot-title.strength {
+            color: #4ade80;
+        }
+
+        .swot-title.weakness {
+            color: #f87171;
+        }
+
+        .swot-title.opportunity {
+            color: #60a5fa;
+        }
+
+        .swot-title.threat {
+            color: #fbbf24;
+        }
 
         .swot-list {
             list-style: none;
@@ -405,10 +451,21 @@
             font-weight: bold;
         }
 
-        .swot-card.strength .swot-list li::before { color: #4ade80; }
-        .swot-card.weakness .swot-list li::before { color: #f87171; }
-        .swot-card.opportunity .swot-list li::before { color: #60a5fa; }
-        .swot-card.threat .swot-list li::before { color: #fbbf24; }
+        .swot-card.strength .swot-list li::before {
+            color: #4ade80;
+        }
+
+        .swot-card.weakness .swot-list li::before {
+            color: #f87171;
+        }
+
+        .swot-card.opportunity .swot-list li::before {
+            color: #60a5fa;
+        }
+
+        .swot-card.threat .swot-list li::before {
+            color: #fbbf24;
+        }
 
         /* Price Tags */
         .price-grid {
@@ -453,13 +510,33 @@
         }
 
         /* Bilingual support */
-        .en { display: none; }
-        body.lang-en .zh { display: none; }
-        body.lang-en .en { display: block; }
-        body.lang-en .zh-inline { display: none; }
-        body.lang-en .en-inline { display: inline; }
-        .en-inline { display: none; }
-        body.lang-en .en-inline { display: inline; }
+        .en {
+            display: none;
+        }
+
+        body.lang-en .zh {
+            display: none;
+        }
+
+        body.lang-en .en {
+            display: block;
+        }
+
+        body.lang-en .zh-inline {
+            display: none;
+        }
+
+        body.lang-en .en-inline {
+            display: inline;
+        }
+
+        .en-inline {
+            display: none;
+        }
+
+        body.lang-en .en-inline {
+            display: inline;
+        }
 
         /* Animations */
         .fade-in {
@@ -467,23 +544,46 @@
         }
 
         @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
 
         /* Mobile */
         @media (max-width: 768px) {
-            .container { padding: 1rem; }
-            .hero { padding: 2rem 1rem; }
-            .card { padding: 1.5rem; }
-            .card-grid { grid-template-columns: 1fr; }
-            .header-content { flex-direction: column; gap: 1rem; }
+            .container {
+                padding: 1rem;
+            }
+
+            .hero {
+                padding: 2rem 1rem;
+            }
+
+            .card {
+                padding: 1.5rem;
+            }
+
+            .card-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .header-content {
+                flex-direction: column;
+                gap: 1rem;
+            }
         }
     </style>
 </head>
+
 <body>
     <div class="bg-animation"></div>
-    
+
     <header class="header">
         <div class="header-content">
             <div class="logo">
@@ -514,7 +614,8 @@
             </h1>
             <p class="hero-subtitle">
                 <span class="zh-inline">新西兰100%实木家具专业零售商深度分析，包含流量、产品、竞对和市场洞察</span>
-                <span class="en-inline">In-depth analysis of NZ's 100% solid wood furniture specialist, including traffic, products, competitors and market insights</span>
+                <span class="en-inline">In-depth analysis of NZ's 100% solid wood furniture specialist, including
+                    traffic, products, competitors and market insights</span>
             </p>
             <p class="hero-date">
                 <span class="zh-inline">分析日期</span>
@@ -583,10 +684,14 @@
                             <span class="en-inline">Brand Positioning</span>
                         </h3>
                         <ul style="list-style: none; color: var(--text-secondary); line-height: 2;">
-                            <li>✓ <span class="zh-inline">100% 纯实木家具 (无MDF/贴皮/刨花板)</span><span class="en-inline">100% Solid Hardwood (No MDF/Veneer/Chipboard)</span></li>
-                            <li>✓ <span class="zh-inline">中高端市场定位</span><span class="en-inline">Premium Market Positioning</span></li>
-                            <li>✓ <span class="zh-inline">北欧/斯堪的纳维亚现代风格</span><span class="en-inline">Nordic/Scandinavian Modern Style</span></li>
-                            <li>✓ <span class="zh-inline">NZ制造床垫</span><span class="en-inline">NZ-Made Mattresses</span></li>
+                            <li>✓ <span class="zh-inline">100% 纯实木家具 (无MDF/贴皮/刨花板)</span><span class="en-inline">100%
+                                    Solid Hardwood (No MDF/Veneer/Chipboard)</span></li>
+                            <li>✓ <span class="zh-inline">中高端市场定位</span><span class="en-inline">Premium Market
+                                    Positioning</span></li>
+                            <li>✓ <span class="zh-inline">北欧/斯堪的纳维亚现代风格</span><span
+                                    class="en-inline">Nordic/Scandinavian Modern Style</span></li>
+                            <li>✓ <span class="zh-inline">NZ制造床垫</span><span class="en-inline">NZ-Made Mattresses</span>
+                            </li>
                         </ul>
                     </div>
                     <div>
@@ -594,12 +699,14 @@
                             <span class="zh-inline">门店位置</span>
                             <span class="en-inline">Store Locations</span>
                         </h3>
-                        <div style="background: rgba(0,0,0,0.2); border-radius: 10px; padding: 1rem; margin-bottom: 1rem;">
+                        <div
+                            style="background: rgba(0,0,0,0.2); border-radius: 10px; padding: 1rem; margin-bottom: 1rem;">
                             <strong>
                                 <span class="zh-inline">旗舰体验中心</span>
                                 <span class="en-inline">Flagship Experience Centre</span>
                             </strong>
-                            <p style="color: var(--text-secondary); font-size: 0.9rem; margin-top: 0.5rem;">6 Link Drive, Wairau Valley, Auckland</p>
+                            <p style="color: var(--text-secondary); font-size: 0.9rem; margin-top: 0.5rem;">6 Link
+                                Drive, Wairau Valley, Auckland</p>
                             <span style="color: #4ade80; font-size: 0.8rem;">
                                 <span class="zh-inline">7天营业</span>
                                 <span class="en-inline">Open 7 Days</span>
@@ -610,7 +717,8 @@
                                 <span class="zh-inline">展厅及配送中心</span>
                                 <span class="en-inline">Showroom & Distribution</span>
                             </strong>
-                            <p style="color: var(--text-secondary); font-size: 0.9rem; margin-top: 0.5rem;">163 Marua Road, Mt Wellington, Auckland</p>
+                            <p style="color: var(--text-secondary); font-size: 0.9rem; margin-top: 0.5rem;">163 Marua
+                                Road, Mt Wellington, Auckland</p>
                         </div>
                     </div>
                 </div>
@@ -644,47 +752,58 @@
                             <tr>
                                 <td>🛏 <span class="zh-inline">卧室家具</span><span class="en-inline">Bedroom</span></td>
                                 <td class="product-count">256</td>
-                                <td><span class="zh-inline">床架+床头柜+抽屉柜</span><span class="en-inline">Beds + Bedside Tables + Drawers</span></td>
+                                <td><span class="zh-inline">床架+床头柜+抽屉柜</span><span class="en-inline">Beds + Bedside
+                                        Tables + Drawers</span></td>
                             </tr>
                             <tr>
-                                <td>　　<span class="zh-inline">床头柜</span><span class="en-inline">Bedside Tables</span></td>
+                                <td>　　<span class="zh-inline">床头柜</span><span class="en-inline">Bedside Tables</span>
+                                </td>
                                 <td class="product-count">100</td>
                                 <td>Oslo, Seattle, Achen</td>
                             </tr>
                             <tr>
-                                <td>　　<span class="zh-inline">抽屉柜</span><span class="en-inline">Chest of Drawers</span></td>
+                                <td>　　<span class="zh-inline">抽屉柜</span><span class="en-inline">Chest of Drawers</span>
+                                </td>
                                 <td class="product-count">80</td>
-                                <td><span class="zh-inline">多种配置</span><span class="en-inline">Multiple Configurations</span></td>
+                                <td><span class="zh-inline">多种配置</span><span class="en-inline">Multiple
+                                        Configurations</span></td>
                             </tr>
                             <tr>
-                                <td>🍽 <span class="zh-inline">餐厅家具</span><span class="en-inline">Dining Room</span></td>
+                                <td>🍽 <span class="zh-inline">餐厅家具</span><span class="en-inline">Dining Room</span>
+                                </td>
                                 <td class="product-count">160</td>
-                                <td><span class="zh-inline">餐桌+餐椅+长凳</span><span class="en-inline">Tables + Chairs + Benches</span></td>
+                                <td><span class="zh-inline">餐桌+餐椅+长凳</span><span class="en-inline">Tables + Chairs +
+                                        Benches</span></td>
                             </tr>
                             <tr>
                                 <td>🛋 <span class="zh-inline">沙发</span><span class="en-inline">Sofas</span></td>
                                 <td class="product-count">76</td>
-                                <td><span class="zh-inline">真皮/布艺</span><span class="en-inline">Leather/Fabric</span></td>
+                                <td><span class="zh-inline">真皮/布艺</span><span class="en-inline">Leather/Fabric</span>
+                                </td>
                             </tr>
                             <tr>
-                                <td>☕ <span class="zh-inline">咖啡桌</span><span class="en-inline">Coffee Tables</span></td>
+                                <td>☕ <span class="zh-inline">咖啡桌</span><span class="en-inline">Coffee Tables</span>
+                                </td>
                                 <td class="product-count">67</td>
                                 <td><span class="zh-inline">各种尺寸</span><span class="en-inline">Various Sizes</span></td>
                             </tr>
                             <tr>
                                 <td>📺 <span class="zh-inline">电视柜</span><span class="en-inline">TV Units</span></td>
                                 <td class="product-count">63</td>
-                                <td><span class="zh-inline">展示柜</span><span class="en-inline">Display Cabinets</span></td>
+                                <td><span class="zh-inline">展示柜</span><span class="en-inline">Display Cabinets</span>
+                                </td>
                             </tr>
                             <tr>
                                 <td>📚 <span class="zh-inline">书柜</span><span class="en-inline">Bookcases</span></td>
                                 <td class="product-count">63</td>
-                                <td><span class="zh-inline">储物展示</span><span class="en-inline">Storage & Display</span></td>
+                                <td><span class="zh-inline">储物展示</span><span class="en-inline">Storage & Display</span>
+                                </td>
                             </tr>
                             <tr>
                                 <td>🌿 <span class="zh-inline">装饰品</span><span class="en-inline">Decor</span></td>
                                 <td class="product-count">200+</td>
-                                <td><span class="zh-inline">植物/时钟/圣诞装饰</span><span class="en-inline">Plants/Clocks/Christmas</span></td>
+                                <td><span class="zh-inline">植物/时钟/圣诞装饰</span><span
+                                        class="en-inline">Plants/Clocks/Christmas</span></td>
                             </tr>
                         </tbody>
                     </table>
@@ -771,8 +890,10 @@
                             <table>
                                 <thead>
                                     <tr>
-                                        <th><span class="zh-inline">竞争对手</span><span class="en-inline">Competitor</span></th>
-                                        <th><span class="zh-inline">月访问</span><span class="en-inline">Monthly</span></th>
+                                        <th><span class="zh-inline">竞争对手</span><span class="en-inline">Competitor</span>
+                                        </th>
+                                        <th><span class="zh-inline">月访问</span><span class="en-inline">Monthly</span>
+                                        </th>
                                         <th><span class="zh-inline">排名</span><span class="en-inline">Rank</span></th>
                                     </tr>
                                 </thead>
@@ -825,11 +946,16 @@
                         <span class="en-inline">Strengths</span>
                     </h4>
                     <ul class="swot-list">
-                        <li><span class="zh-inline">100%实木差异化定位</span><span class="en-inline">100% solid wood differentiation</span></li>
-                        <li><span class="zh-inline">明确品质承诺(无MDF/贴皮)</span><span class="en-inline">Clear quality promise (No MDF/Veneer)</span></li>
-                        <li><span class="zh-inline">两家Auckland实体门店</span><span class="en-inline">Two Auckland showrooms</span></li>
-                        <li><span class="zh-inline">完整产品系列(800+ SKU)</span><span class="en-inline">Complete product range (800+ SKUs)</span></li>
-                        <li><span class="zh-inline">NZ本地制造床垫</span><span class="en-inline">NZ-made mattresses</span></li>
+                        <li><span class="zh-inline">100%实木差异化定位</span><span class="en-inline">100% solid wood
+                                differentiation</span></li>
+                        <li><span class="zh-inline">明确品质承诺(无MDF/贴皮)</span><span class="en-inline">Clear quality promise
+                                (No MDF/Veneer)</span></li>
+                        <li><span class="zh-inline">两家Auckland实体门店</span><span class="en-inline">Two Auckland
+                                showrooms</span></li>
+                        <li><span class="zh-inline">完整产品系列(800+ SKU)</span><span class="en-inline">Complete product
+                                range (800+ SKUs)</span></li>
+                        <li><span class="zh-inline">NZ本地制造床垫</span><span class="en-inline">NZ-made mattresses</span>
+                        </li>
                     </ul>
                 </div>
                 <div class="swot-card weakness">
@@ -838,10 +964,14 @@
                         <span class="en-inline">Weaknesses</span>
                     </h4>
                     <ul class="swot-list">
-                        <li><span class="zh-inline">流量规模与大型电商差距大</span><span class="en-inline">Traffic gap vs large e-commerce</span></li>
-                        <li><span class="zh-inline">品牌知名度有限</span><span class="en-inline">Limited brand awareness</span></li>
-                        <li><span class="zh-inline">价格相比宜家等不具优势</span><span class="en-inline">Price disadvantage vs IKEA</span></li>
-                        <li><span class="zh-inline">主要集中Auckland市场</span><span class="en-inline">Auckland-focused presence</span></li>
+                        <li><span class="zh-inline">流量规模与大型电商差距大</span><span class="en-inline">Traffic gap vs large
+                                e-commerce</span></li>
+                        <li><span class="zh-inline">品牌知名度有限</span><span class="en-inline">Limited brand awareness</span>
+                        </li>
+                        <li><span class="zh-inline">价格相比宜家等不具优势</span><span class="en-inline">Price disadvantage vs
+                                IKEA</span></li>
+                        <li><span class="zh-inline">主要集中Auckland市场</span><span class="en-inline">Auckland-focused
+                                presence</span></li>
                     </ul>
                 </div>
                 <div class="swot-card opportunity">
@@ -850,10 +980,14 @@
                         <span class="en-inline">Opportunities</span>
                     </h4>
                     <ul class="swot-list">
-                        <li><span class="zh-inline">NZ家具电商30-35%增长趋势</span><span class="en-inline">NZ furniture e-commerce 30-35% growth</span></li>
-                        <li><span class="zh-inline">消费者环保意识提升</span><span class="en-inline">Rising eco-consciousness</span></li>
-                        <li><span class="zh-inline">实木可持续家具需求增长</span><span class="en-inline">Growing sustainable furniture demand</span></li>
-                        <li><span class="zh-inline">住房市场复苏带动需求</span><span class="en-inline">Housing market recovery</span></li>
+                        <li><span class="zh-inline">NZ家具电商30-35%增长趋势</span><span class="en-inline">NZ furniture
+                                e-commerce 30-35% growth</span></li>
+                        <li><span class="zh-inline">消费者环保意识提升</span><span class="en-inline">Rising
+                                eco-consciousness</span></li>
+                        <li><span class="zh-inline">实木可持续家具需求增长</span><span class="en-inline">Growing sustainable
+                                furniture demand</span></li>
+                        <li><span class="zh-inline">住房市场复苏带动需求</span><span class="en-inline">Housing market
+                                recovery</span></li>
                     </ul>
                 </div>
                 <div class="swot-card threat">
@@ -862,10 +996,14 @@
                         <span class="en-inline">Threats</span>
                     </h4>
                     <ul class="swot-list">
-                        <li><span class="zh-inline">大型综合电商流量碾压</span><span class="en-inline">Large e-commerce traffic dominance</span></li>
-                        <li><span class="zh-inline">进口平价家具冲击</span><span class="en-inline">Imported budget furniture</span></li>
-                        <li><span class="zh-inline">经济不确定性影响高端消费</span><span class="en-inline">Economic uncertainty on premium</span></li>
-                        <li><span class="zh-inline">Oakano等直接竞争对手</span><span class="en-inline">Direct competitors like Oakano</span></li>
+                        <li><span class="zh-inline">大型综合电商流量碾压</span><span class="en-inline">Large e-commerce traffic
+                                dominance</span></li>
+                        <li><span class="zh-inline">进口平价家具冲击</span><span class="en-inline">Imported budget
+                                furniture</span></li>
+                        <li><span class="zh-inline">经济不确定性影响高端消费</span><span class="en-inline">Economic uncertainty on
+                                premium</span></li>
+                        <li><span class="zh-inline">Oakano等直接竞争对手</span><span class="en-inline">Direct competitors like
+                                Oakano</span></li>
                     </ul>
                 </div>
             </div>
@@ -888,10 +1026,14 @@
                             <span class="en-inline">📌 Short-Term</span>
                         </h3>
                         <ul style="list-style: none; color: var(--text-secondary); line-height: 2;">
-                            <li>→ <span class="zh-inline">SEO优化: "solid oak furniture NZ"关键词</span><span class="en-inline">SEO: Target "solid oak furniture NZ" keywords</span></li>
-                            <li>→ <span class="zh-inline">扩展博客内容，建立专业权威</span><span class="en-inline">Expand blog content for authority</span></li>
-                            <li>→ <span class="zh-inline">Instagram/Pinterest视觉营销</span><span class="en-inline">Instagram/Pinterest visual marketing</span></li>
-                            <li>→ <span class="zh-inline">Google Ads精准投放</span><span class="en-inline">Targeted Google Ads campaigns</span></li>
+                            <li>→ <span class="zh-inline">SEO优化: "solid oak furniture NZ"关键词</span><span
+                                    class="en-inline">SEO: Target "solid oak furniture NZ" keywords</span></li>
+                            <li>→ <span class="zh-inline">扩展博客内容，建立专业权威</span><span class="en-inline">Expand blog
+                                    content for authority</span></li>
+                            <li>→ <span class="zh-inline">Instagram/Pinterest视觉营销</span><span
+                                    class="en-inline">Instagram/Pinterest visual marketing</span></li>
+                            <li>→ <span class="zh-inline">Google Ads精准投放</span><span class="en-inline">Targeted Google
+                                    Ads campaigns</span></li>
                         </ul>
                     </div>
                     <div style="padding-left: 2rem;">
@@ -900,10 +1042,14 @@
                             <span class="en-inline">🎯 Long-Term</span>
                         </h3>
                         <ul style="list-style: none; color: var(--text-secondary); line-height: 2;">
-                            <li>→ <span class="zh-inline">产品扩展: 户外家具系列</span><span class="en-inline">Expand: Outdoor furniture range</span></li>
-                            <li>→ <span class="zh-inline">与室内设计师/装修公司合作</span><span class="en-inline">Partner with designers/renovators</span></li>
-                            <li>→ <span class="zh-inline">强化会员计划和老客户复购</span><span class="en-inline">Strengthen loyalty programs</span></li>
-                            <li>→ <span class="zh-inline">强调环保/可持续发展叙事</span><span class="en-inline">Emphasize sustainability narrative</span></li>
+                            <li>→ <span class="zh-inline">产品扩展: 户外家具系列</span><span class="en-inline">Expand: Outdoor
+                                    furniture range</span></li>
+                            <li>→ <span class="zh-inline">与室内设计师/装修公司合作</span><span class="en-inline">Partner with
+                                    designers/renovators</span></li>
+                            <li>→ <span class="zh-inline">强化会员计划和老客户复购</span><span class="en-inline">Strengthen loyalty
+                                    programs</span></li>
+                            <li>→ <span class="zh-inline">强调环保/可持续发展叙事</span><span class="en-inline">Emphasize
+                                    sustainability narrative</span></li>
                         </ul>
                     </div>
                 </div>
@@ -912,11 +1058,7 @@
     </div>
 
     <footer class="footer">
-        <p>
-            <span class="zh-inline">分析工具: Antigravity AI | 数据来源: Shopify API, Similarweb, IBISWorld</span>
-            <span class="en-inline">Analysis Tool: Antigravity AI | Data Sources: Shopify API, Similarweb, IBISWorld</span>
-        </p>
-        <p style="margin-top: 0.5rem;">© 2026 Market Analysis Report</p>
+        <p>© 2026 Market Analysis Report</p>
     </footer>
 
     <script>
@@ -970,7 +1112,7 @@
                         },
                         ticks: {
                             color: 'rgba(255, 255, 255, 0.7)',
-                            callback: function(value) {
+                            callback: function (value) {
                                 return value + 'K';
                             }
                         }
@@ -1005,4 +1147,5 @@
         });
     </script>
 </body>
+
 </html>
